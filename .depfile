@@ -1,0 +1,12 @@
+{
+  "name": "nerdtest",
+  "start": {
+    "dir": "/Users/chris/ciqss/proj/nerdery-test/app",
+    "hangs": [
+      "gulp watch"
+    ],
+    "nohangs": [
+      "subl ~/proj/nerdery-test/app"
+    ]
+  }
+}
