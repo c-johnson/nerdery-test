@@ -1,20 +1,21 @@
-(function() {
-  var MainController = {
-    var selectors = {
 
-    };  
+// (function() {
+//   var MainController = {
+//     var selectors = {
 
-    this.elements = 
+//     };  
+
+//     this.elements = 
 
 
-    var init = function () {
+//     var init = function () {
 
-    };
+//     };
 
-    var registerTabs = function () {
+//     var registerTabs = function () {
 
-    };
-  };
+//     };
+//   };
 
-  MainController.init();  
-})();
+//   MainController.init();  
+// })();

@@ -1,0 +1,20 @@
+.carousel {
+
+}
+
+.carousel-img-active {
+  padding-bottom: 10px;
+}
+
+.carousel-thumbs {
+  li {
+    float: left;
+    display: block;
+    width: 159px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

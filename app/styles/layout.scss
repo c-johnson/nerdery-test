@@ -1,0 +1,32 @@
+.row {
+  clear: both;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-left-col {
+  width: 666px;
+  margin-right: 20px;
+  float: left;
+}
+
+.main-right-col {
+  width: 274px;
+  float: left;
+}
+
+/* TODO:  Not semantic! */
+.gutter-bottom {
+  padding-bottom: 20px;
+}
+
+/*  Remove this class if you want to begin a responsive layout.  */
+.no-responsive {
+  .container {
+    width: 1000px;
+  }  
+}

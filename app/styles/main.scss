@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'header';
+@import 'layout';
 @import 'elements';
 
 * {
@@ -13,20 +14,22 @@ body {
   color: #333;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
+hr {
+  width: 100%;
+  margin: 20px 0;
+
+  /* TODO:  For some reason, I can't get this lighter... this is mega hacky but it's close */
+  opacity: .5;
+  // border-color: white;
 }
 
-.main-content {
+.main-container {
   background: white;
   height: 2000px;
 }
 
-.no-responsive {
-  .container {
-    width: 1000px;
-  }  
+.main-content {
+  padding: 20px;
 }
 
 @media (min-width: $screen-sm-min) {
