@@ -32,6 +32,23 @@ hr {
   padding: 20px;
 }
 
+.browse-categories {
+  width: 176px;
+  float: left;
+  margin-right: 20px;
+
+  .heading::before {
+    position: absolute;
+    top: 0;
+    left: -33px;
+  }
+}
+
+.recent-articles {
+  width: 470px;
+  float: left;
+}
+
 @media (min-width: $screen-sm-min) {
   body {
     background: url('/images/main-bg.jpg') center top no-repeat;

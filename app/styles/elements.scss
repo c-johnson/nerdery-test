@@ -60,6 +60,45 @@ ul.nav-tabs {
   background: linear-gradient(to top, rgba(0,0,0,.19), rgba(255,255,255,.19));
 }
 
+.heading {
+  padding: 9px;
+  background-color: #0084d9;
+
+  h3 {
+    margin: 0;
+
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .icon {
+    float: left;
+    margin-right: 10px;
+  }
+
+}
+
+.heading-overhang {
+  position: relative;
+  left: -33px;
+  width: calc(100% + 33px);
+
+  &:after {
+    position: absolute;
+    display: block;
+    
+    width: 13px;
+    height: 5px;
+    bottom: -5px;
+    left: 0px;
+
+    background-image: url("/images/icons/heading-fold.png");
+    content: "";
+  }
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
