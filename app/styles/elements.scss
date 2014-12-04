@@ -4,13 +4,16 @@ ul.nav-tabs {
 
   a {
     margin-right: -4px;
-    padding: 13px 42px 12px;
+    padding: 14px 36px 11px;
     display: inline-block;
 
     border-top: 1px solid #bdbdbd;
     border-bottom: 1px solid #bdbdbd;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
 
     color: #5f6062;
+    letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 1px 1px white;
     text-transform: uppercase;
@@ -26,12 +29,12 @@ ul.nav-tabs {
     display: inline-block;
 
     &:last-child a {
-      padding-right: 50px;
+      padding-right: 40px;
     }
 
     &.active a {
       margin-top: -6px;
-      padding: 18px 41px 12px;
+      padding-top: 19px;
 
       background-color: white;
       border-left: 1px solid #bdbdbd;
