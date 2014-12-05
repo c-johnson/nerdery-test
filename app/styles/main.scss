@@ -35,7 +35,16 @@ hr {
 .browse-categories {
   width: 176px;
   float: left;
+  font-size: 14px;
   margin-right: 20px;
+
+  h4 {
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-bottom: 2px;
+  }
 
   .heading::before {
     position: absolute;
@@ -47,7 +56,34 @@ hr {
 .recent-articles {
   width: 470px;
   float: left;
+
+  li {
+    clear: both;
+    height: 105px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  h2, p {
+    margin: 0 0 5px;
+    font-size: 14px;
+  }
+
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .article {
+    float: left;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+  }
 }
+
+
 
 @media (min-width: $screen-sm-min) {
   body {
