@@ -153,22 +153,29 @@
               </div> 
               <hr>
               <form action="POST">
-                <input type="text" value="email" placeholder="user@domain.com">
+                <input type="text" name="email" placeholder="user@domain.com">
 
                 <div class="well">
                   <span class="prompt">Select the newsletters you'd like to recieve</span class="prompt">
                   <div class="options">
                     <label>
-                      <input type="checkbox" value="destinations">
+                      <input type="checkbox" name="destinations">
                       Destinations & Getaways
                     </label>
                     <label>
-                      <input type="checkbox" value="travelTips">
+                      <input type="checkbox" name="travelTips">
                       Weekly Travel Tips
                     </label>
                   </div>
                 </div>
+
+                <button type="submit" class="btn btn-primary">Sign Up</button>
               </form>
+              <div class="cta-footer">
+                <a href="#">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="#">Terms of Use</a>
+              </div>
             </section>
           </div>
         </div>

@@ -15,6 +15,11 @@ body {
   color: #282b2e;
 }
 
+a {
+  color: #282b2e;
+  text-decoration: none;
+}
+
 hr {
   width: 100%;
   margin: 20px 0;
@@ -83,6 +88,12 @@ section.recent-articles {
   }
 }
 
+section.sign-up {
+  .btn-primary {
+    float: right;
+    margin-bottom: 10px;
+  }
+}
 
 
 @media (min-width: $screen-sm-min) {
