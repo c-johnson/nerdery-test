@@ -62,14 +62,13 @@ ul.nav-tabs {
 
 .heading {
   padding: 9px;
-  background-color: #0084d9;
 
   h3 {
     margin: 0;
 
     font-size: 12px;
-    color: white;
     font-weight: bold;
+    letter-spacing: .3px;
     text-transform: uppercase;
   }
 
@@ -78,6 +77,14 @@ ul.nav-tabs {
     margin-right: 10px;
   }
 
+}
+
+.heading-primary {
+  background-color: #0084d9;
+
+  h3 {
+    color: white;
+  }
 }
 
 .heading-overhang {
@@ -99,9 +106,61 @@ ul.nav-tabs {
   }
 }
 
+.cta-box {
+  background-color: #dbdbdb;
+  padding: 10px;
+
+  & > * + * {
+
+  }
+
+  img {
+    float: left;
+    margin: 1px 10px 0 0;
+  }
+
+  h3 {
+    line-height: 13px;
+  }
+
+  hr {
+    opacity: 1;
+    margin: 10px 0;
+  }
+
+  input[type="text"] {
+    padding: 4px 7px;
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .heading {
+    background-color: #dbdbdb;
+    padding: 0;
+  }
+
+  .well {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #cac9c9;
+  }
+
+  .prompt {
+    font-style: italic;
+  }
+
+  .options {
+    margin-top: 6px;
+  }
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: black;
   padding: 0.2em 0;
 }

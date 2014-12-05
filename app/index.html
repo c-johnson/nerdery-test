@@ -74,8 +74,8 @@
         <div class="row">
           <div class="main-left-col">
             <div class="row gutter-bottom">
-              <div class="browse-categories">
-                <div class="heading heading-overhang">
+              <section class="browse-categories">
+                <div class="heading heading-primary heading-overhang">
                   <img class="icon" src="/images/icons/folder.png">
                   <h3>Browse Categories</h3>
                 </div>
@@ -100,9 +100,9 @@
                   <li>Australia</li>
                   <li>All Destinations</li>
                 </ul>
-              </div>
-              <div class="recent-articles">
-                <div class="heading">
+              </section>
+              <section class="recent-articles">
+                <div class="heading heading-primary">
                   <img class="icon" src="/images/icons/hamburger.png">
                   <h3>Recent Articles</h3>
                 </div>
@@ -135,18 +135,41 @@
                     </article>
                   </li>
                 </ul>
-              </div>
+              </section>
             </div>
 
-            <div class="popular-videos">
-                <div class="heading heading-overhang">
-                  <img class="icon" src="/images/icons/video.png">
-                  <h3>Popular Videos</h3>
-                </div>
-            </div>
+            <section class="popular-videos">
+              <div class="heading heading-primary heading-overhang">
+                <img class="icon" src="/images/icons/video.png">
+                <h3>Popular Videos</h3>
+              </div>
+            </section>
           </div>
           <div class="main-right-col">
+            <section class="sign-up cta-box">
+              <div class="heading">
+                <img src="images/icons/envelope.png">
+                <h3>Sign up for our newsletter</h3>
+              </div> 
+              <hr>
+              <form action="POST">
+                <input type="text" value="email" placeholder="user@domain.com">
 
+                <div class="well">
+                  <span class="prompt">Select the newsletters you'd like to recieve</span class="prompt">
+                  <div class="options">
+                    <label>
+                      <input type="checkbox" value="destinations">
+                      Destinations & Getaways
+                    </label>
+                    <label>
+                      <input type="checkbox" value="travelTips">
+                      Weekly Travel Tips
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </section>
           </div>
         </div>
 
