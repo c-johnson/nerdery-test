@@ -1,0 +1,40 @@
+.main-footer {
+  background-color: #2c2c2c;
+  padding: 20px;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul {
+    margin-bottom: 8px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .links {
+
+  }
+
+  .divider {
+    margin: 0 7px;
+  }
+}
+
+.copyright {
+  color: #969696;
+}
+
+ul.social-media {
+  float: right;
+  margin-top: 4px;
+
+  li {
+    display: inline;
+    margin-left: 6px;
+  }
+}

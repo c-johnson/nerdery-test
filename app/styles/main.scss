@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'header';
+@import 'footer';
 @import 'layout';
 @import 'elements';
 
@@ -25,7 +26,6 @@ hr {
 
 .main-container {
   background: white;
-  height: 2000px;
 }
 
 .main-content {
