@@ -18,6 +18,14 @@
   text-transform: uppercase;
 }
 
+.icon-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.7px 5px 0 5px;
+  border-color: #282b2e transparent transparent transparent;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -90,7 +98,6 @@ ul.nav-tabs {
     float: left;
     margin-right: 10px;
   }
-
 }
 
 .heading-primary {

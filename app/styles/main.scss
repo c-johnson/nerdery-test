@@ -45,6 +45,7 @@ section.browse-categories {
 
   h4 {
     margin-bottom: 5px;
+    cursor: pointer;
   }
 
   li {
@@ -55,6 +56,12 @@ section.browse-categories {
     position: absolute;
     top: 0;
     left: -33px;
+  }
+
+  .icon-triangle {
+    position: relative;
+    top: 14px;
+    left: 8px;
   }
 }
 
