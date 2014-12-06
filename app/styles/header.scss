@@ -23,8 +23,18 @@
 }
 
 .main-header-search {
-  width: 100%;
-  padding: 3px 7px;  
+  position: relative;
   margin: 10px 0 15px;
-  font-size: 12px;
+
+  input {
+    width: 100%;
+    padding: 3px 7px;  
+    font-size: 12px;
+  }
+
+  .icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
 }
