@@ -95,6 +95,19 @@ section.sign-up {
   }
 }
 
+section.current-contests {
+  li {
+    display: block;
+    overflow: auto;
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-weight: bold;
+    line-height: 17px;
+  }
+}
+
 
 @media (min-width: $screen-sm-min) {
   body {
