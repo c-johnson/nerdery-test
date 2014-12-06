@@ -144,13 +144,16 @@ ul.nav-tabs {
   input[type="text"] {
     padding: 4px 7px;
     width: 100%;
-    margin: 3px 0;
+    margin: 1px 0 2px;
   }
 
   label {
     display: block;
     font-weight: bold;
-    margin-bottom: 2px;
+  }
+
+  label + label {
+    margin-top: 2px;
   }
 
   .heading {
@@ -159,7 +162,7 @@ ul.nav-tabs {
   }
 
   .well {
-    padding: 10px;
+    padding: 9px;
     margin: 10px 0;
     background-color: #cac9c9;
   }
@@ -182,6 +185,22 @@ ul.nav-tabs {
   line-height: 24px;
   background-color: #cac9c9;
   border-top: 1px solid #969696;
+}
+
+.video-thumbs {
+  padding-top: 20px;
+  margin-left: -20px;
+}
+
+.video-thumb {
+  display: inline-block;
+  position: relative;
+  margin: 0 -2px 20px 20px;
+
+  label {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .browsehappy {
