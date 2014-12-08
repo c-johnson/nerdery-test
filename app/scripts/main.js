@@ -5,8 +5,12 @@
     this.carouselActive = 1;
     this.carouselRotateSpeed = 5000;  // How often the carousel rotates with no user interaction
     this.carouselHitboxInterval = 100;  // How often we check the hitbox -- can be increased for more performance
-    this.debugMode = false;
+    this.debugMode = true;
     this.numSlides = 4;
+
+    if (this.debugMode) {
+      this.carouselRotateSpeed = 1000; 
+    }
 
     this.init = function () {
       this.registerElements();
@@ -15,7 +19,7 @@
     };
 
     this.registerElements = function () {
-      this.carousel = $('[data-carousel');
+      this.carousel = $('[data-carousel]');
       this.carouselThumbs = $('[data-carousel-thumbs] [data-slide-id]');
       this.carouselSlides = $('[data-carousel-slides] [data-slide]');
 

@@ -212,18 +212,18 @@
                 <h3>Sign up for our newsletter</h3>
               </div> 
               <hr>
-              <form action="POST">
+              <form method="POST" action="/subscribers">
                 <input type="text" name="email" placeholder="user@domain.com">
 
                 <div class="well">
                   <span class="prompt">Select the newsletters you'd like to recieve</span class="prompt">
                   <div class="options">
                     <label>
-                      <input type="checkbox" name="destinations">
+                      <input type="checkbox" name="newsletters" value="destinations">
                       Destinations & Getaways
                     </label>
                     <label>
-                      <input type="checkbox" name="travelTips">
+                      <input type="checkbox" name="newsletters" value="weeklyTips">
                       Weekly Travel Tips
                     </label>
                   </div>
