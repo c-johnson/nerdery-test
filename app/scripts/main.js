@@ -1,5 +1,5 @@
 (function() {
-  "use strict";
+  'use strict';
 
   var MainController = function () {
     this.carouselActive = 1;
@@ -29,14 +29,14 @@
       if (this.carouselThumbs.length === this.carouselSlides.length) {
         this.numSlides = this.carouselThumbs.length;
       } else {
-        throw "Uh-oh!  Number of thumbs does not match number of slides for the carousel element.";
+        throw 'Uh-oh!  Number of thumbs does not match number of slides for the carousel element.';
       }
     };
 
     this.registerHandlers = function () {
       var self = this;
 
-      this.carouselThumbs.on('click', function (evt) {
+      this.carouselThumbs.on('click', function () {
         self.activateCarousel($(this).attr('data-slide-id'));
       }); 
     };
@@ -54,7 +54,7 @@
       this.carouselRotateTimer = 0;
 
       this.carouselTimer = setInterval(function () {
-        var carouselHovered = this.carousel.is(":hover");
+        var carouselHovered = this.carousel.is(':hover');
         this.carouselRotateTimer = (carouselHovered) ? 0 : this.carouselRotateTimer + this.carouselHitboxInterval;
         if (this.debugMode) {
           console.log('Time since last rotate = ' + this.carouselRotateTimer);
@@ -69,7 +69,7 @@
 
     this.stopCarouselTimer = function () {
       clearInterval(this.carouselTimer);
-    }
+    };
 
     this.rotateSlides = function () {
       var activeThumbID = this.carouselThumbs.filter('.active').attr('data-slide-id');
