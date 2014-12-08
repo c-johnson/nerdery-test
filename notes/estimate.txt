@@ -15,3 +15,6 @@ Scope: ~16-20 hours
   - Twitter widget [1h]
   - Footer [1h]
   - Tweaks, cleanup, finalizing, deploying, etc. [1h]
+
+Time it actually took:  ~18 hours
+
