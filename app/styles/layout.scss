@@ -19,6 +19,14 @@
   float: left;
 }
 
+.tab-content {
+  display: none;
+
+  &.tab-active {
+    display: block;
+  }
+}
+
 /* TODO:  Not semantic! */
 .gutter-bottom {
   padding-bottom: 20px;

@@ -31,6 +31,12 @@
       } else {
         throw 'Uh-oh!  Number of thumbs does not match number of slides for the carousel element.';
       }
+
+      this.navbar = $('[data-tab-navigation]');
+      this.navbarTabs = $('[data-tab-navigation] li');
+      this.navbarTabContent = $('[data-tab-content]');
+      this.tabContent = $('[data-page="content"]');
+      this.tabNoContent = $('[data-page="nocontent"]');
     };
 
     this.registerHandlers = function () {
@@ -39,6 +45,25 @@
       this.carouselThumbs.on('click', function () {
         self.activateCarousel($(this).attr('data-slide-id'));
       }); 
+
+      this.navbarTabs.on('click', function () {
+        self.activateTab($(this));
+      });
+    };
+
+    this.activateTab = function ($tab) {
+      var page = $tab.attr('data-page');
+
+      if (page === "4") {
+        this.tabContent.show();
+        this.tabNoContent.hide();
+      } else {
+        this.tabContent.hide();
+        this.tabNoContent.show();
+      }
+
+      this.navbarTabs.removeClass('active');
+      $tab.addClass('active');
     };
 
     this.activateCarousel = function (id) {
