@@ -7,9 +7,11 @@
     this.init = function () {
       this.registerElements();
       this.registerHandlers();
+      this.registerCarouselTimer();
     };
 
     this.registerElements = function () {
+      this.carousel = $('[data-carousel');
       this.carouselThumbs = $('[data-carousel-thumbs] [data-slide-id]');
       this.carouselSlides = $('[data-carousel-slides] [data-slide]');
     };
@@ -30,9 +32,16 @@
       this.carouselSlides.filter('[data-slide="'+id+'"]').addClass('carousel-active');
     };  
 
-    this.registerTabs = function () {
-
+    this.registerCarouselTimer = function () {
+      setInterval(function () {
+        var isHovered = this.carousel.is(":hover");
+        console.log('cursor in hitbox? : ' + isHovered);
+      }.bind(this), 300);
     };
+
+    this.rotateSlides = function () {
+
+    };  
   };
 
   var mainCtrl = new MainController();
