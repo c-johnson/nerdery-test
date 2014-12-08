@@ -3,10 +3,10 @@
 
   var MainController = function () {
     this.carouselActive = 1;
-    this.carouselRotateSpeed = 5000;  // How often the carousel rotates with no user interaction
+    this.carouselRotateSpeed = 1000;  // How often the carousel rotates with no user interaction
     this.carouselHitboxInterval = 100;  // How often we check the hitbox -- can be increased for more performance
     this.debugMode = false;
-    this.maxSlides = 4;
+    this.numSlides = 4;
 
     this.init = function () {
       this.registerElements();
@@ -18,6 +18,15 @@
       this.carousel = $('[data-carousel');
       this.carouselThumbs = $('[data-carousel-thumbs] [data-slide-id]');
       this.carouselSlides = $('[data-carousel-slides] [data-slide]');
+
+      this.carouselThumbNum = this.carouselThumbs.length;
+      this.carouselSlideNum = this.carouselSlides.length;
+
+      if (this.carouselThumbs.length === this.carouselSlides.length) {
+        this.numSlides = this.carouselThumbs.length;
+      } else {
+        throw "Uh-oh!  Number of thumbs does not match number of slides for the carousel element.";
+      }
     };
 
     this.registerHandlers = function () {
@@ -60,7 +69,7 @@
 
     this.rotateSlides = function () {
       var activeThumbID = this.carouselThumbs.filter('.active').attr('data-slide-id');
-      var carouselNextID = (parseInt(activeThumbID) % this.maxSlides) + 1;
+      var carouselNextID = (parseInt(activeThumbID) % this.numSlides) + 1;
       this.activateCarousel(carouselNextID);
     };
   };
