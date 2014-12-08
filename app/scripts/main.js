@@ -37,6 +37,9 @@
       this.navbarTabContent = $('[data-tab-content]');
       this.tabContent = $('[data-page="content"]');
       this.tabNoContent = $('[data-page="nocontent"]');
+
+      this.collapseCtrls = $('[data-collapse-ctrl]');
+      this.collapseBodies = $('[data-collapse-body]');
     };
 
     this.registerHandlers = function () {
@@ -48,6 +51,11 @@
 
       this.navbarTabs.on('click', function () {
         self.activateTab($(this));
+      });
+
+      this.collapseCtrls.on('click', function () {
+        var collapseID = $(this).attr('data-collapse-ctrl');
+        self.collapseBodies.filter('[data-collapse-body="'+collapseID+'"]').toggleClass('collapsed');
       });
     };
 
