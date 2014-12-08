@@ -78,6 +78,8 @@
     };
   };
 
-  var mainCtrl = new MainController();
-  mainCtrl.init();  
+  $(document).ready(function () {
+    var mainCtrl = new MainController();
+    mainCtrl.init();  
+  });
 })();
