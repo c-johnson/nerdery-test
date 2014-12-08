@@ -1,6 +1,5 @@
-Scope: ~16-20 hours
+Scope: ~16 hours
   - General setup, scaffolding, etc. [1h]
-  - Grid system!??! [1-5h]
   - Header [1h]
   - Main tab feature [2h]
     - Style [1h]
@@ -16,5 +15,10 @@ Scope: ~16-20 hours
   - Footer [1h]
   - Tweaks, cleanup, finalizing, deploying, etc. [1h]
 
-Time it actually took:  ~18 hours
+===
 
+Time it actually took:  ~13 hours
+
+- Wednesday:  6 hours
+- Friday:  6 hours
+- Monday:  1 hour (+ extra time on deployment and stuff)
