@@ -3,7 +3,8 @@
   "start": {
     "dir": "/Users/chris/ciqss/proj/nerdery-test/app",
     "hangs": [
-      "gulp watch"
+      "gulp watch",
+      "ngr 9000"
     ],
     "nohangs": [
       "subl ~/proj/nerdery-test/app"
