@@ -3,7 +3,7 @@
 
   var MainController = function () {
     this.carouselActive = 1;
-    this.carouselRotateSpeed = 1000;  // How often the carousel rotates with no user interaction
+    this.carouselRotateSpeed = 5000;  // How often the carousel rotates with no user interaction
     this.carouselHitboxInterval = 100;  // How often we check the hitbox -- can be increased for more performance
     this.debugMode = false;
     this.numSlides = 4;
