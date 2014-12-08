@@ -1,0 +1,6 @@
+Questions for Tony (aticknor@nerdery.com):
+  - Can I use a grid system at least?  Would greatly benefit from a responsive grid, seems wasteful to roll my own just for this.
+  - Is there a code style document somewhere?  The webinar is good, but having one for reference would be nice.
+  
+Other questions:
+  - SEO / heading structure?  h1, h2, etc.  I'd supsect adding on "Browse Categories" maybe

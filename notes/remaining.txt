@@ -1,0 +1,23 @@
+DONE:
+  - Carousel functionality, active styling, etc.
+    - Make this extensible (up to 4 images).
+    - The carousel should auto-rotate on page load and stop rotating when the user interacts with it, continuing its rotation once the user is no longer in the hit area of the carousel.
+    - Additional slide captions are embedded in PSD
+  - Double-check code (stylesheets, javascripts, etc).  Clean everything up.
+    - Check semanticness of elements, see where I can improve
+    - Run through HTML, JS, CSS validator
+    - Double-check pixel-perfectness
+  - Test thoroughly in Safari, Firefox, and Chrome
+  - Test thoroughly in IE8
+  - Accessibility...everywhere
+    - Alt text for images
+    - Tab focus stuff
+    - Aria roles?!
+  - Make tabs work
+
+TODO (Friday):
+  
+  - Browse Categories collapse/expand functionality
+  - Form element -- make sure is marked up appropriately.
+  - Watch Nerdery code standards video for any more clues
+  - Update total scope with estimates, time it took for each section, etc.

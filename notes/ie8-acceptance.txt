@@ -1,0 +1,9 @@
+Here are the remaining deviations with IE8:
+  - linear-gradient not supported in IE8
+    - Navigation bar shadings
+  - :before + z-index doesn't work
+    - Carousel blue border
+    - "play" button for videos
+  - CSS triangles strange behavior on "browse category" headers
+  - Placeholders don't work in IE8 without additional support
+  

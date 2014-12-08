@@ -1,0 +1,17 @@
+Scope: ~16-20 hours
+  - General setup, scaffolding, etc. [1h]
+  - Grid system!??! [1-5h]
+  - Header [1h]
+  - Main tab feature [2h]
+    - Style [1h]
+    - Functionality [1h]
+  - Main content + ads (above fold) [1h]
+  - Carousel [2h]
+    - I've implemented this several times in other projects, so I'll admit this one is copy/paste.
+  - Secondary content (below fold) [2h]
+    - browse categories, recent articles, popular videos
+  - Signup for newsletter [3h]
+  - Current Contests [1h]
+  - Twitter widget [1h]
+  - Footer [1h]
+  - Tweaks, cleanup, finalizing, deploying, etc. [1h]
