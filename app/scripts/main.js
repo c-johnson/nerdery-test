@@ -5,7 +5,7 @@
     this.carouselActive = 1;
     this.carouselRotateSpeed = 5000;  // How often the carousel rotates with no user interaction
     this.carouselHitboxInterval = 100;  // How often we check the hitbox -- can be increased for more performance
-    this.debugMode = true;
+    this.debugMode = false;
     this.numSlides = 4;
 
     if (this.debugMode) {
@@ -53,8 +53,12 @@
     this.registerCarouselTimer = function () {
       this.carouselRotateTimer = 0;
 
+      this.carousel.hover(function () {
+        $(this).toggleClass('hover');
+      })
+
       this.carouselTimer = setInterval(function () {
-        var carouselHovered = this.carousel.is(':hover');
+        var carouselHovered = this.carousel.hasClass('hover');
         this.carouselRotateTimer = (carouselHovered) ? 0 : this.carouselRotateTimer + this.carouselHitboxInterval;
         if (this.debugMode) {
           console.log('Time since last rotate = ' + this.carouselRotateTimer);
