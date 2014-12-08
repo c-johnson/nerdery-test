@@ -3,7 +3,7 @@
 
   var MainController = function () {
     this.carouselActive = 1;
-    this.carouselRotateSpeed = 5000;  // (once every 5 seconds);
+    this.carouselRotateSpeed = 5000;  // How often the carousel rotates with no user interaction
     this.carouselHitboxInterval = 100;  // How often we check the hitbox -- can be increased for more performance
     this.debugMode = false;
     this.maxSlides = 4;
@@ -60,7 +60,8 @@
 
     this.rotateSlides = function () {
       var activeThumbID = this.carouselThumbs.filter('.active').attr('data-slide-id');
-      this.activateCarousel(parseInt(activeThumbID) + 1);
+      var carouselNextID = (parseInt(activeThumbID) % this.maxSlides) + 1;
+      this.activateCarousel(carouselNextID);
     };
   };
 
