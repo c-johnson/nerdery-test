@@ -1,3 +1,5 @@
+@import '../vars';
+
 .carousel {
 
 }
@@ -28,11 +30,34 @@
   li {
     float: left;
     display: block;
+    position: relative;
     width: 159px;
     margin-right: 10px;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &.active {
+      img {
+        border: 3px solid $blue;
+        width: 153px;
+      }
+
+      &:after {
+        position: absolute;
+        left: 45%;
+        top: -8px;
+        display: block;
+        content: "";
+
+        /* Triangle from:  http://apps.eky.hk/css-triangle-generator/  */
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 8.7px 5px;
+        border-color: transparent transparent #007bff transparent;
+      }
     }
   }
 }
