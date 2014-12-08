@@ -26,6 +26,14 @@
   }
 }
 
+.carousel-slide {
+  display: none;
+
+  &.carousel-active {
+    display: block;
+  }
+}
+
 .carousel-thumbs {
   li {
     float: left;
@@ -39,9 +47,12 @@
     }
 
     &.active {
-      img {
+      &:before {
         border: 3px solid $blue;
         width: 153px;
+        height: 73px;
+        content: "";
+        position: absolute;
       }
 
       &:after {
